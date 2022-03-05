@@ -1,0 +1,21 @@
+<mat-stepper>
+    <mat-step label="Step 1" state="phone">
+        <app-question [first]="true" [question]="'מה המין שלך?'">
+            <app-card-options-question></app-card-options-question>
+        </app-question>
+    </mat-step>
+    <mat-step label="Step 2" state="chat">
+        <app-question question="מה המצב רוח שלך?"></app-question>
+    </mat-step>
+    <mat-step label="Step 3">
+        <app-question [last]="true" question="אתה אוהב חצילים?"></app-question>
+    </mat-step>
+  
+    <!-- Icon overrides. -->
+    <ng-template matStepperIcon="phone">
+      <mat-icon>call_end</mat-icon>
+    </ng-template>
+    <ng-template matStepperIcon="chat">
+      <mat-icon>forum</mat-icon>
+    </ng-template>
+  </mat-stepper>

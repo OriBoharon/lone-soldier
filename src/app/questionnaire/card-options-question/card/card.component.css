@@ -1,0 +1,12 @@
+.card-header {
+    text-align: center;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: inherit;
+    max-height: 45px;
+}

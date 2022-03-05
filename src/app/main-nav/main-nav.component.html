@@ -1,0 +1,33 @@
+
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <img class="responsive" src="assets\output-onlinepngtools (1).png" alt="">
+      <span>זכויות החייל הבודד</span>
+      <app-search [ngStyle]="{'margin':'30px'}"></app-search>
+    </mat-toolbar>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport=false
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-nav-list color="primary">
+      <a mat-list-item color="primary" href="#">השאלון האישי
+        <mat-icon matListIcon>folder</mat-icon> 
+      </a>
+      <mat-divider></mat-divider>
+      <a mat-list-item color="primary" href="#">צור קשר
+        <mat-icon matListIcon>phone</mat-icon>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <ng-content #app></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
