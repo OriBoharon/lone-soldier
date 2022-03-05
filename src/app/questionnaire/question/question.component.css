@@ -2,3 +2,11 @@
     display: flex;
     justify-content: center;
 }
+
+.questionText {
+    font-size: xx-large;
+}
+
+button {
+    margin: 10px;
+}

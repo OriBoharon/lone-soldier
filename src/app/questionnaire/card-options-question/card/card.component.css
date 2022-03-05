@@ -8,5 +8,10 @@
 
 img {
     width: inherit;
-    max-height: 45px;
+   
+    max-height: 150px;
+}
+
+mat-radio-button {
+    margin-right: 10px;
 }

@@ -15,10 +15,12 @@ import { MatListModule } from '@angular/material/list';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { MatRadioModule } from '@angular/material/radio';
 import { SearchComponent } from './search/search.component';
 import {MatRippleModule} from '@angular/material/core';
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 import { QuestionComponent } from './questionnaire/question/question.component';
+import { MatProgressBarModule} from '@angular/material/progress-bar'
 import { CardOptionsQuestionComponent } from './questionnaire/card-options-question/card-options-question.component';
 import { CardComponent } from './questionnaire/card-options-question/card/card.component';
 
@@ -39,6 +41,8 @@ import { CardComponent } from './questionnaire/card-options-question/card/card.c
     LayoutModule,
     MatRippleModule,
     MatToolbarModule,
+    MatRadioModule,
+    MatProgressBarModule,
     MatCardModule,
     MatButtonModule,
     MatSidenavModule,
