@@ -7,14 +7,7 @@
         <ng-content #question></ng-content>
     </div>
     <div class="center">
-        <mat-card-actions matRipple
-        [matRippleCentered]="true"
-        [matRippleDisabled]="false"
-        [matRippleUnbounded]="true"
-        [matRippleRadius]="20"
-        [matRippleColor]="'red'">
             <button *ngIf="!first" mat-button color="primary" mat-raised-button	matStepperPrevious>הקודם</button>
             <button *ngIf="!last" mat-button color="primary" mat-raised-button matStepperNext>הבא</button>
-        </mat-card-actions>
     </div>
 </div>

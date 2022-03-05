@@ -12,4 +12,7 @@ export class CardOptionsQuestionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  clicked() {
+    
+  }
 }
