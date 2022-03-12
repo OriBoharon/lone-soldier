@@ -1,5 +1,5 @@
 
-    <mat-toolbar color="primary">
+    <mat-toolbar>
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -8,16 +8,15 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <img class="responsive" src="assets\output-onlinepngtools (1).png" alt="">
       <span>זכויות החייל הבודד</span>
-      <app-search [ngStyle]="{'margin':'30px'}"></app-search>
+      <!-- <app-search [ngStyle]="{'margin':'30px'}"></app-search> -->
     </mat-toolbar>
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport=false
+  <mat-sidenav #drawer class="sidenav white" fixedInViewport=false
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-nav-list color="primary">
+    <mat-nav-list color="accent">
       <a mat-list-item color="primary" href="#">השאלון האישי
         <mat-icon matListIcon>folder</mat-icon> 
       </a>
@@ -27,7 +26,7 @@
       </a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content class="white">
     <ng-content #app></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>

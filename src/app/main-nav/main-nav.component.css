@@ -21,3 +21,16 @@ img {
   height: inherit;
   width: fit-content;
 }
+
+mat-sidenav {
+  background-color: blue;
+}
+
+mat-toolbar {
+  background-color:black;
+  color: azure;
+}
+
+.white {
+  background-color: white;
+}

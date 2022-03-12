@@ -1,16 +1,34 @@
 
 <div class="center">
 <mat-stepper>
-    <mat-step label="Step 1" state="phone">
+    <mat-step label="מה המין שלך?" state="phone">
         <app-question [first]="true" [question]="'מה המין שלך?'">
             <app-card-options-question></app-card-options-question>
         </app-question>
     </mat-step>
-    <mat-step label="Step 2" state="chat">
-        <app-question question="מה המצב רוח שלך?"></app-question>
+    <mat-step label="איזה סוג שירות את משרת?" state="chat">
+        <app-question question="איזה סוג שירות את משרת?">
+            <mat-form-field class="center" appearance="fill">
+                <mat-label>סוג שירות</mat-label>
+                <mat-select>
+                  <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                  </mat-option> -->
+                  <mat-option>עורפי</mat-option>
+                  <mat-option>רמת פעילות א'</mat-option>
+                  <mat-option>רמת פעילות ב'</mat-option>
+                </mat-select>
+              </mat-form-field>
+              
+        </app-question>
     </mat-step>
-    <mat-step label="Step 3">
-        <app-question [last]="true" question="אתה אוהב חצילים?"></app-question>
+    <mat-step label="האם אתה בשירות קבע?">
+        <app-question [last]="true" question="האם אתה בשירות קבע?">
+            <mat-button-toggle-group name="keva" aria-label="שירות קבע">
+                <mat-button-toggle value="כן">כן</mat-button-toggle>
+                <mat-button-toggle value="לא">לא</mat-button-toggle>
+            </mat-button-toggle-group>
+        </app-question>
     </mat-step>
   
     <!-- Icon overrides. -->

@@ -14,7 +14,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { MatInputModule } from '@angular/material/input';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
+import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { SearchComponent } from './search/search.component';
 import {MatRippleModule} from '@angular/material/core';
@@ -23,6 +25,7 @@ import { QuestionComponent } from './questionnaire/question/question.component';
 import { MatProgressBarModule} from '@angular/material/progress-bar'
 import { CardOptionsQuestionComponent } from './questionnaire/card-options-question/card-options-question.component';
 import { CardComponent } from './questionnaire/card-options-question/card/card.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +35,14 @@ import { CardComponent } from './questionnaire/card-options-question/card/card.c
     QuestionnaireComponent,
     QuestionComponent,
     CardOptionsQuestionComponent,
-    CardComponent
+    CardComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatButtonToggleModule,
     LayoutModule,
     MatRippleModule,
     MatToolbarModule,
@@ -46,6 +51,7 @@ import { CardComponent } from './questionnaire/card-options-question/card/card.c
     MatCardModule,
     MatButtonModule,
     MatSidenavModule,
+    MatSelectModule,
     MatIconModule,
     MatListModule,
     MatStepperModule,

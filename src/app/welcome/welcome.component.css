@@ -1,0 +1,12 @@
+.welcome-screen {
+    text-align: center;
+}
+
+img {
+    max-width: 300px;
+}
+
+button {
+    background-color: black !important;
+    color: ivory !important;
+}

@@ -3,7 +3,28 @@
 html, body { height: 100%; }
 body { 
     margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: Rubik, "Helvetica Neue", sans-serif;
     max-width: 100%;
     overflow-x: hidden;
  }
+
+ *:not(mat-icon){
+    font-family: Rubik, "Helvetica Neue", sans-serif !important; 
+    /* Add !important to overwrite all elements */
+  }
+
+  .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, 
+.mat-step-header .mat-step-icon-state-edit {
+    background-color: black !important;
+    color: white !important;
+}
+
+.theme-color {
+    background-color: black;
+    color: ivory;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
